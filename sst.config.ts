@@ -1,7 +1,7 @@
 import { SSTConfig } from "sst";
 import { StorageStack } from "./stacks/StorageStacks";
-import { ApiStack } from "./stacks/ApiStack"
-\
+import { ApiStack } from "./stacks/ApiStack";
+
 export default {
   config(_input) {
     return {
