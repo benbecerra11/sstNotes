@@ -1,7 +1,7 @@
 // import { Bucket } from "aws-cdk-lib/aws-s3";
-import { Bucket, Table } from "sst/constructs";
+import { Bucket, StackContext, Table } from "sst/constructs";
 
-export function StorageStack({ stack, app }) {
+export function StorageStack({ stack, app }: StackContext) {
   // Create the DynamoDB table
   const table = new Table(stack, "Notes", {
     fields: {
